@@ -51,4 +51,11 @@ html:has(.menu:popover-open) {
   transition: 400ms;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .menu,
+  .menu .burger--close {
+    transition: none;
+  }
+}
+
 
