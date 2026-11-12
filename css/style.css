@@ -13,6 +13,7 @@
 html:has(.menu:popover-open) {
   overflow: hidden;
 }
+/* LE MENU S'OUVRE EN PLEIN ECRAN */
 
 /* --- burger ---------------------------- */
 .burger {
@@ -22,7 +23,7 @@ html:has(.menu:popover-open) {
 .burger--close {
   transition: transform 400ms;
 }
-
+/* PERMET DE CHANGER L'APPEARANCE DU BOUTON LORS DU SURVOLE DU MENU */
 .menu {
   /* … on complète le bloc existant … */
   transition: 400ms allow-discrete;
@@ -38,6 +39,7 @@ html:has(.menu:popover-open) {
     opacity: 0;
   }
 }
+/* FONDU DE MENU RENDANT LA TRANSITION FLUIDE */
 
 /* À l'ouverture, même position « hamburger » */
 @starting-style {
@@ -50,12 +52,12 @@ html:has(.menu:popover-open) {
   transform: rotate(90deg);
   transition: 400ms;
 }
-
+/* ROTATION DU BOUTON LORS DE L'OUVERTURE DU MENU */
 @media (prefers-reduced-motion: reduce) {
   .menu,
   .menu .burger--close {
     transition: none;
   }
 }
-
+/* PERMET DE DESACTIVER LES ANIMATIONS POUR LES UTILISATEURS QUI LE DEMANDENT */
 
