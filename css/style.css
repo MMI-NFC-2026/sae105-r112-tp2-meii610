@@ -19,6 +19,10 @@ html:has(.menu:popover-open) {
   cursor: pointer;
 }
 
+.burger--close {
+  transition: transform 400ms;
+}
+
 .menu {
   /* … on complète le bloc existant … */
   transition: 400ms allow-discrete;
@@ -46,4 +50,5 @@ html:has(.menu:popover-open) {
   transform: rotate(90deg);
   transition: 400ms;
 }
-/* css à faire */
+
+
